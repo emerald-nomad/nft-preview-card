@@ -1,0 +1,76 @@
+.container {
+  padding-top: 3em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: var(--color-card-bg);
+  padding: 1.25em;
+  width: 90%;
+  margin: auto;
+  border-radius: 0.5em;
+
+  &__image-container {
+    cursor: pointer;
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+
+  &__title {
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__desc,
+  &__time,
+  &__contact {
+    color: var(--color-soft-blue);
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__value {
+    color: var(--color-cyan);
+  }
+
+  &__value,
+  &__time {
+    display: flex;
+    align-items: center;
+  }
+
+  &__divider {
+    width: 100%;
+    background-color: var(--color-line);
+    padding: 1px 0;
+    margin: 1em 0;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-regular);
+
+    &-image {
+      border: 1px solid var(--color-white);
+      border-radius: 50%;
+      $dim: 35px;
+      height: $dim;
+      width: $dim;
+      margin-right: 1em;
+    }
+
+    &-name {
+      color: var(--color-white);
+      cursor: pointer;
+    }
+  }
+}
