@@ -4,6 +4,7 @@ import styles from "styles/Home.module.scss";
 import equilibriumImage from "images/image-equilibrium.jpg";
 import clockIcon from "images/icon-clock.svg";
 import ethIcon from "images/icon-ethereum.svg";
+import viewIcon from "images/icon-view.svg";
 import avatar from "images/image-avatar.png";
 
 const Home: NextPage = () => {
@@ -12,6 +13,10 @@ const Home: NextPage = () => {
       <section className={styles["card"]}>
         <div className={styles["card__image-container"]}>
           <Image src={equilibriumImage} layout="responsive" />
+          <div className={styles["card__image-overlay"]}></div>
+          <div className={styles["card__view-icon"]}>
+            <Image src={viewIcon} />
+          </div>
         </div>
         <h1 className={styles["card__title"]}>Equilibrium #3429</h1>
         <p className={styles["card__desc"]}>
